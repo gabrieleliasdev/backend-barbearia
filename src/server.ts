@@ -7,6 +7,7 @@ import 'reflect-metadata';
 const app = express();
 
 app.use(express.json());
+app.use('/files', express.static());
 app.use(routes);
 
 app.listen(3333, () => {
